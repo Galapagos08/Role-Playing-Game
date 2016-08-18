@@ -11,7 +11,7 @@
 @implementation Character
 
 - (instancetype)init {
-    return [self initWithName:@"Unknown"];
+    return [self initWithName:@"Unnamed"];
 }
 
 - (instancetype)initWithName:(NSString *)name {

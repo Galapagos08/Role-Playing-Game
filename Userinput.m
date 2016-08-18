@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Userinput.h"
+#include <string.h>
 
 NSNumber *getNumberFromUser(int maxValidChoice) {
     int choice = -1;
@@ -23,27 +24,15 @@ NSNumber *getNumberFromUser(int maxValidChoice) {
     }
     return @(choice);
 }
-
-int getUserName(char yourName[], char *prompt) {
+NSString *getStringFromUser(char *charStar) {
+    fpurge(stdin);
+    printf("What is your name?\n");
+    
+    char name[100] = "\0";
+    
     
     int numberOfItemsScanned = 0;
-    while (numberOfItemsScanned != 1) {
-        fpurge(stdin);
-        printf("%s", prompt);
-        numberOfItemsScanned = scanf("%[^\n]s", yourName);
-    }
-    
-    return numberOfItemsScanned;
-}
-
-NSString *getStringFromUser(NSString *name) {
-    
-    char yourName[100] = "\0";
-
-    int numberOfItemsScanned = 0;
-    while (numberOfItemsScanned != 1) {
-        numberOfItemsScanned = getUserName(yourName, "What is your name?\n");
-    }
-    return @(yourName);
+    numberOfItemsScanned = scanf("%[^\n]s", name);
+    return @(name);
 }
 

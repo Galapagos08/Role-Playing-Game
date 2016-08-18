@@ -10,6 +10,5 @@
 
 NSNumber *getNumberFromUser(int maxValidChoice);
 
-NSString *getStringFromUser(NSString *name);
+NSString *getStringFromUser(char *charStar);
 
-int getUserName(char yourName[], char *prompt);

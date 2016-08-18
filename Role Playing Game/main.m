@@ -8,11 +8,32 @@
 
 #import <Foundation/Foundation.h>
 #import "Userinput.h"
+#import "Character.h"
+
+int getUserName(char userName[], char *prompt);
 
 int main(int argc, const char * argv[]) {
+   
+    char userName[100] = "\0";
+    int numberOfItemsScanned = 0;
+    while (numberOfItemsScanned != 1) {
+        numberOfItemsScanned = getUserName(userName, "What is your name?\n");
+    }    
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        NSLog(@"Hello %s", userName);
     }
     return 0;
+    
 }
+int getUserName(char userName[], char *prompt) {
+    
+    int numberOfItemsScanned = 0;
+    while (numberOfItemsScanned != 1) {
+        fpurge(stdin);
+        printf("%s", prompt);
+        numberOfItemsScanned = scanf("%[^\n]s", userName);
+    }
+    
+    return numberOfItemsScanned;
+}
+
