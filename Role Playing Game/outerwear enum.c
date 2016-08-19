@@ -33,3 +33,37 @@ char *OuterwearGetStringName (Outerwear input) {
         }
     }
 }
+char *ColorGetStringName(Color input) {
+    switch (input) {
+        case ColorRed: {
+            return "Red";
+        }
+        case ColorOrange: {
+            return "Orange";
+        }
+        case ColorYellow: {
+            return "Yellow";
+        }
+        case ColorGreen: {
+            return "Green";
+        }
+        case ColorBlue: {
+            return "Blue";
+        }
+        case ColorIndigo: {
+            return "Indigo";
+        }
+        case ColorViolet: {
+            return "Violet";
+        }
+        case ColorBlack: {
+            return "Black";
+        }
+        case ColorWhite: {
+            return "White";
+        }
+        default: {
+            return NULL;
+        }
+    }
+}

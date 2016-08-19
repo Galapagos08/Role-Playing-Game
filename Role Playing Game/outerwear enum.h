@@ -26,6 +26,23 @@ typedef enum Outerwear {
 
 char *OuterwearGetStringName (Outerwear input);
 
+typedef enum Color {
+    ColorRed = 1,
+    ColorOrange,
+    ColorYellow,
+    ColorGreen,
+    ColorBlue,
+    ColorIndigo,
+    ColorViolet,
+    ColorBlack,
+    ColorWhite,
+    ColorNull = INT_MIN,
+    ColorFirst = ColorRed,
+    ColorLast = ColorWhite
+    
+} Color;
+
+char *ColorGetStringName(Color color);
 
 
 #endif /* outerwear_enum_h */

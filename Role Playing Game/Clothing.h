@@ -14,9 +14,9 @@
     
 }
 
-@property (nonatomic) NSString *color;
+@property (nonatomic) NSString *colorAsString;
 
-- (instancetype)initWithColor:(NSString *)color NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithColor:(NSString *)colorAsString NS_DESIGNATED_INITIALIZER;
 
 
 @end

@@ -14,19 +14,19 @@
     return [self initWithColor:@"NotChosen"];
 }
 
-- (instancetype)initWithColor:(NSString *)color {
+- (instancetype)initWithColor:(NSString *)colorAsString {
     self = [super init];
     if (self) {
-        _color = color;
+        _colorAsString = colorAsString;
     }
     return self;
 }
 
-- (NSString *)color {
-    return _color;
+- (NSString *)colorAsString {
+    return _colorAsString;
 }
 
 - (NSString *)description {
-    return _color;
+    return _colorAsString;
 }
 @end
