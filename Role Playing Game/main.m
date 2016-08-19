@@ -28,17 +28,17 @@ int main(int argc, const char * argv[]) {
            (outerwearChosen < OuterwearFirst) || (outerwearChosen > OuterwearLast)) {
         fpurge(stdin);
         printf("\nWhat clothing would you like %s to wear? Please enter:\n", userName);
-        printf("    %d for Cloak\n", OuterwearCloak);
-        printf("    %d for Hooded Robe\n", OuterwearHooded_Robe);
-        printf("    %d for Body Armor\n", OuterwearBody_Armor);
-        printf("    %d for Trenchcoat\n", OuterwearTrenchcoat);
-        printf("    %d for EVA Suit\n", OuterwearEVA_Suit);
-        printf("    %d for Leather Jacket\n", OuterwearLeather_Jacket);
+        printf("    %d for cloak\n", OuterwearCloak);
+        printf("    %d for hooded robe\n", OuterwearHooded_Robe);
+        printf("    %d for body armor\n", OuterwearBody_Armor);
+        printf("    %d for trenchcoat\n", OuterwearTrenchcoat);
+        printf("    %d for EVA suit\n", OuterwearEVA_Suit);
+        printf("    %d for leather jacket\n", OuterwearLeather_Jacket);
         
         numberOfClothingItemsScanned = scanf("%d", &outerwearChosen);
     }
     
-    char *outerwearAsString = OuterwearGetStringName(outerwearChosen);
+    NSString *outerwear = OuterwearGetStringName(outerwearChosen);
     
     Color colorChosen = ColorNull;
     int numberOfColorItemsScanned = 0;
@@ -46,7 +46,7 @@ int main(int argc, const char * argv[]) {
     while ((numberOfColorItemsScanned != 1) ||
            (colorChosen < ColorFirst) || (colorChosen > ColorLast)) {
         fpurge(stdin);
-        printf("\nWhat color would you like your character's %d to be? Please enter:\n", outerwearChosen);
+        NSLog(@"\n\nWhat color would you like your character's %@ to be? Please enter:\n", outerwear);
         printf("    %d for red\n", ColorRed);
         printf("    %d for orange\n", ColorOrange);
         printf("    %d for yellow\n", ColorYellow);
@@ -56,19 +56,19 @@ int main(int argc, const char * argv[]) {
         printf("    %d for violet\n", ColorViolet);
         printf("    %d for black\n", ColorBlack);
         printf("    %d for white\n", ColorWhite);
-        numberOfItemsScanned = scanf("%d", &colorChosen);
+        numberOfColorItemsScanned = scanf("%d", &colorChosen);
     }
     
-    char *colorAsString = ColorGetStringName(colorChosen);
+    NSString *color = ColorGetStringName(colorChosen);
     
     
     @autoreleasepool {
         Character *identity = [[Character alloc] initWithName:@(userName)
-                                                     clothing:@(outerwearAsString)];
+                                                     clothing:outerwear];
         
-        Clothing *style = [[Clothing alloc] initWithColor:@(colorAsString)];
+        Clothing *style = [[Clothing alloc] initWithColor:color];
         
-        NSLog(@"\n\nHello %@. You are wearing your %@, which is a splendid shade of %@.\n\n", [identity name], [identity outerwearAsString], [style colorAsString]);
+        NSLog(@"\n\nHello %@. You are wearing your %@ %@.\n\n", [identity name], [style color], [identity outerwear]);
         
         return 0;
     }

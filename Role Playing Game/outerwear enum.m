@@ -1,5 +1,5 @@
 //
-//  outerwear enum.c
+//  outerwear enum.m
 //  Role Playing Game
 //
 //  Created by Dan Esrey on 2016/18/08.
@@ -8,59 +8,59 @@
 
 #include "outerwear enum.h"
 
-char *OuterwearGetStringName (Outerwear input) {
+NSString *OuterwearGetStringName (Outerwear input) {
     switch (input) {
         case OuterwearCloak:{
-            return "Cloak";
+            return @"cloak";
         }
         case OuterwearHooded_Robe: {
-            return "Hooded Robe";
+            return @"hooded robe";
         }
         case OuterwearBody_Armor: {
-            return "Body Armor";
+            return @"body armor";
         }
         case OuterwearTrenchcoat: {
-            return "Trenchcoat";
+            return @"trenchcoat";
         }
         case OuterwearEVA_Suit: {
-            return "EVA Suit";
+            return @"EVA suit";
         }
         case OuterwearLeather_Jacket: {
-            return "Leather Jacket";
+            return @"leather jacket";
         }
         default: {
             return NULL;
         }
     }
 }
-char *ColorGetStringName(Color input) {
+NSString *ColorGetStringName(Color input) {
     switch (input) {
         case ColorRed: {
-            return "Red";
+            return @"red";
         }
         case ColorOrange: {
-            return "Orange";
+            return @"orange";
         }
         case ColorYellow: {
-            return "Yellow";
+            return @"yellow";
         }
         case ColorGreen: {
-            return "Green";
+            return @"green";
         }
         case ColorBlue: {
-            return "Blue";
+            return @"blue";
         }
         case ColorIndigo: {
-            return "Indigo";
+            return @"indigo";
         }
         case ColorViolet: {
-            return "Violet";
+            return @"violet";
         }
         case ColorBlack: {
-            return "Black";
+            return @"black";
         }
         case ColorWhite: {
-            return "White";
+            return @"white";
         }
         default: {
             return NULL;

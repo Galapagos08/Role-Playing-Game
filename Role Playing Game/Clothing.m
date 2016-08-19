@@ -11,22 +11,23 @@
 @implementation Clothing
 
 - (instancetype)init {
+    // this is a comment written by tj.
     return [self initWithColor:@"NotChosen"];
 }
 
-- (instancetype)initWithColor:(NSString *)colorAsString {
+- (instancetype)initWithColor:(NSString *)color {
     self = [super init];
     if (self) {
-        _colorAsString = colorAsString;
+        _color = color;
     }
     return self;
 }
 
-- (NSString *)colorAsString {
-    return _colorAsString;
+- (NSString *)color {
+    return _color;
 }
 
 - (NSString *)description {
-    return _colorAsString;
+    return _color;
 }
 @end

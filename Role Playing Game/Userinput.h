@@ -10,6 +10,4 @@
 
 NSNumber *getNumberFromUser(int maxValidChoice);
 
-NSString *getColorFromUser(char *charStar);
-
 int getUserName(char userName[], char *prompt);

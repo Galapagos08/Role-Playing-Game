@@ -24,17 +24,6 @@ NSNumber *getNumberFromUser(int maxValidChoice) {
     }
     return @(choice);
 }
-NSString *getColorFromUser(char *charStar) {
-    fpurge(stdin);
-    printf("What is your favorite color?\n");
-    
-    char color[100] = "\0";
-    
-    
-    int numberOfItemsScanned = 0;
-    numberOfItemsScanned = scanf("%[^\n]s", color);
-    return @(color);
-}
 int getUserName(char userName[], char *prompt) {
     
     int numberOfItemsScanned = 0;

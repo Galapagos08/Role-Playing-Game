@@ -15,10 +15,10 @@
 }
 
 @property (nonatomic) NSString *name;
-@property (nonatomic) NSString *outerwearAsString;
+@property (nonatomic) NSString *outerwear;
 
 
 - (instancetype)initWithName:(NSString *)name
-                    clothing:(NSString *)outerwearAsString NS_DESIGNATED_INITIALIZER;
+                    clothing:(NSString *)outerwear NS_DESIGNATED_INITIALIZER;
 
 @end

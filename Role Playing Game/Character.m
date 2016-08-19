@@ -18,11 +18,11 @@
 }
 
 - (instancetype)initWithName:(NSString *)name
-                    clothing:(NSString *)outerwearAsString {
+                    clothing:(NSString *)outerwear {
     self = [super init];
     if (self) {
         _name = name;
-        _outerwearAsString = outerwearAsString;
+        _outerwear = outerwear;
     }
     return self;
 }
@@ -35,8 +35,8 @@
     return _name;
 }
 
-- (NSString *)outerwearAsString {
-    return _outerwearAsString;
+- (NSString *)outerwear {
+    return _outerwear;
 }
 
 @end

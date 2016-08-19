@@ -6,13 +6,14 @@
 //  Copyright © 2016 Dan Esrey. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #ifndef outerwear_enum_h
 #define outerwear_enum_h
 #include <stdio.h>
 #include <limits.h>
 
 typedef enum Outerwear {
-    OuterwearCloak =1,
+    OuterwearCloak = 1,
     OuterwearHooded_Robe,
     OuterwearBody_Armor,
     OuterwearTrenchcoat,
@@ -24,7 +25,7 @@ typedef enum Outerwear {
     
 } Outerwear;
 
-char *OuterwearGetStringName (Outerwear input);
+NSString *OuterwearGetStringName (Outerwear input);
 
 typedef enum Color {
     ColorRed = 1,
@@ -42,7 +43,7 @@ typedef enum Color {
     
 } Color;
 
-char *ColorGetStringName(Color color);
+NSString *ColorGetStringName(Color color);
 
 
 #endif /* outerwear_enum_h */
