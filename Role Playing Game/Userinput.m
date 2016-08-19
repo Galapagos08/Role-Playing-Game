@@ -46,3 +46,12 @@ NSString *getStringFromUser() {
     }
     return @(string);
 }
+NSString *getNameFromUser() {
+    char name[100] = "\0";
+    fpurge(stdin);
+    int numberOfStringItemsScanned = 0;
+    while (numberOfStringItemsScanned != 1) {
+        numberOfStringItemsScanned = scanf("%s", name);
+    }
+    return @(name);
+}

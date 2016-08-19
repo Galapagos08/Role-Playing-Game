@@ -25,7 +25,7 @@ typedef enum Outerwear {
     
 } Outerwear;
 
-NSString *OuterwearGetStringName (Outerwear input);
+NSString *OuterwearGetStringName (Outerwear outerwear);
 
 typedef enum Color {
     ColorRed = 1,

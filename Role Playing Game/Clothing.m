@@ -11,7 +11,6 @@
 @implementation Clothing
 
 - (instancetype)init {
-    // this is a comment written by tj.
     return [self initWithColor:@"NotChosen"];
 }
 

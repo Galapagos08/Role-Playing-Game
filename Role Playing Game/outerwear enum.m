@@ -8,8 +8,8 @@
 
 #include "outerwear enum.h"
 
-NSString *OuterwearGetStringName (Outerwear input) {
-    switch (input) {
+NSString *OuterwearGetStringName (Outerwear outerwear) {
+    switch (outerwear) {
         case OuterwearCloak:{
             return @"cloak";
         }

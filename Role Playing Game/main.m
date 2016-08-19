@@ -70,9 +70,9 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"\n\nHello %@. You are wearing your %@ %@.\n\n", [identity name], [style color], [identity outerwear]);
         
-        NSLog(@"\n\nOkay, %@, is there anything you'd like to say?\n\n", [identity name]);
+/*        NSLog(@"\n\nOkay, %@, is there anything you'd like to say?\n\n", [identity name]);
         
-        NSLog(@"%@", getStringFromUser());
+        NSLog(@"%@", getStringFromUser());*/
     }
     return 0;
 }
