@@ -46,7 +46,7 @@ int main(int argc, const char * argv[]) {
     while ((numberOfColorItemsScanned != 1) ||
            (colorChosen < ColorFirst) || (colorChosen > ColorLast)) {
         fpurge(stdin);
-        printf("please enter:\n");
+        printf("\nWhat color would you like your character's %d to be? Please enter:\n", outerwearChosen);
         printf("    %d for red\n", ColorRed);
         printf("    %d for orange\n", ColorOrange);
         printf("    %d for yellow\n", ColorYellow);
