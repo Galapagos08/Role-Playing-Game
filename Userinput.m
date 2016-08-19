@@ -35,4 +35,15 @@ NSString *getStringFromUser(char *charStar) {
     numberOfItemsScanned = scanf("%[^\n]s", name);
     return @(name);
 }
+int getUserName(char userName[], char *prompt) {
+    
+    int numberOfItemsScanned = 0;
+    while (numberOfItemsScanned != 1) {
+        fpurge(stdin);
+        printf("%s", prompt);
+        numberOfItemsScanned = scanf("%[^\n]s", userName);
+    }
+    
+    return numberOfItemsScanned;
+}
 
