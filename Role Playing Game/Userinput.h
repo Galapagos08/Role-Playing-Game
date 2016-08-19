@@ -12,4 +12,4 @@ NSNumber *getNumberFromUser(int maxValidChoice);
 
 int getUserName(char userName[], char *prompt);
 
-
+NSString *getStringFromUser();

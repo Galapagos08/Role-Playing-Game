@@ -40,7 +40,7 @@ int main(int argc, const char * argv[]) {
     
     NSString *outerwear = OuterwearGetStringName(outerwearChosen);
     NSLog(@"\n\nWhat color would you like your character's %@ to be? Please enter:\n", outerwear);
- 
+    
     Color colorChosen = ColorNull;
     int numberOfColorItemsScanned = 0;
     
@@ -70,6 +70,9 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"\n\nHello %@. You are wearing your %@ %@.\n\n", [identity name], [style color], [identity outerwear]);
         
-        return 0;
+        NSLog(@"\n\nOkay, %@, is there anything you'd like to say?\n\n", [identity name]);
+        
+        NSLog(@"%@", getStringFromUser());
     }
+    return 0;
 }

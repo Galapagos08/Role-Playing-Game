@@ -36,3 +36,13 @@ int getUserName(char userName[], char *prompt) {
     return numberOfItemsScanned;
 }
 
+NSString *getStringFromUser() {
+    
+    char string[100] = "\0";
+    fpurge(stdin);
+    int numberOfStringItemsScanned = 0;
+    while (numberOfStringItemsScanned != 1) {
+        numberOfStringItemsScanned = scanf("%s", string);
+    }
+    return @(string);
+}
