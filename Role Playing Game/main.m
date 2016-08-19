@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Userinput.h"
 #import "Character.h"
-#import "some enum.h"
+#import "outerwear enum.h"
 
 int getUserName(char userName[], char *prompt);
 
@@ -21,10 +21,10 @@ int main(int argc, const char * argv[]) {
         numberOfItemsScanned = getUserName(userName, "What is your character name?\n");
     }
     @autoreleasepool {
-        NSLog(@"Hello %s\n", userName);
+        NSLog(@"\nHello %s\n\n", userName);
     }
     
-    printf("What would you like your character to wear?\n");
+    NSLog(@"\nWhat would you like your character to wear?\n");
     
     Outerwear outerwearChosen = OuterwearNull;
     int numberOfClothingItemsScanned = 0;
@@ -44,7 +44,7 @@ int main(int argc, const char * argv[]) {
     }
     
     char *outerwearAsString = OuterwearGetStringName(outerwearChosen);
-    printf("\nYou chose the outerwear %s\n\n", outerwearAsString);
+    NSLog(@"\nYour character, %s, has the outwear, %s.\n\n", userName, outerwearAsString);
     
     
     return 0;

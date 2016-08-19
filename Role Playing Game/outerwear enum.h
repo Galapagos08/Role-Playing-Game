@@ -1,13 +1,13 @@
 //
-//  some enum.h
+//  outerwear enum.h
 //  Role Playing Game
 //
 //  Created by Dan Esrey on 2016/18/08.
 //  Copyright © 2016 Dan Esrey. All rights reserved.
 //
 
-#ifndef some_enum_h
-#define some_enum_h
+#ifndef outerwear_enum_h
+#define outerwear_enum_h
 #include <stdio.h>
 #include <limits.h>
 
@@ -28,4 +28,4 @@ char *OuterwearGetStringName (Outerwear input);
 
 
 
-#endif /* some_enum_h */
+#endif /* outerwear_enum_h */
