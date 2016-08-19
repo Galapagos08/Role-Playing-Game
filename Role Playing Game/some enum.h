@@ -12,8 +12,15 @@
 #include <limits.h>
 
 typedef enum Outerwear {
-    Cloak,
-    Hooded_Robe,
+    OuterwearCloak =1,
+    OuterwearHooded_Robe,
+    OuterwearBody_Armor,
+    OuterwearTrenchcoat,
+    OuterwearEVA_Suit,
+    OuterwearLeather_Jacket,
+    OuterwearNull = INT_MIN,
+    OuterwearFirst = OuterwearCloak,
+    OuterwearLast = OuterwearLeather_Jacket
     
 } Outerwear;
 
