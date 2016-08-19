@@ -39,14 +39,14 @@ int main(int argc, const char * argv[]) {
     }
     
     NSString *outerwear = OuterwearGetStringName(outerwearChosen);
-    
+    NSLog(@"\n\nWhat color would you like your character's %@ to be? Please enter:\n", outerwear);
+ 
     Color colorChosen = ColorNull;
     int numberOfColorItemsScanned = 0;
     
     while ((numberOfColorItemsScanned != 1) ||
            (colorChosen < ColorFirst) || (colorChosen > ColorLast)) {
         fpurge(stdin);
-        NSLog(@"\n\nWhat color would you like your character's %@ to be? Please enter:\n", outerwear);
         printf("    %d for red\n", ColorRed);
         printf("    %d for orange\n", ColorOrange);
         printf("    %d for yellow\n", ColorYellow);
