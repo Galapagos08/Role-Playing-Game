@@ -7,17 +7,22 @@
 //
 
 #import "Character.h"
+#import "outerwear enum.h"
+#import "Clothing.h"
 
 @implementation Character
 
 - (instancetype)init {
-    return [self initWithName:@"Unnamed"];
+    return [self initWithName:@"Unnamed"
+                     clothing:@"Not chosen"];
 }
 
-- (instancetype)initWithName:(NSString *)name {
+- (instancetype)initWithName:(NSString *)name
+                    clothing:(NSString *)outerwearAsString {
     self = [super init];
     if (self) {
         _name = name;
+        _outerwearAsString = outerwearAsString;
     }
     return self;
 }
@@ -28,6 +33,10 @@
 
 - (NSString *)description {
     return _name;
+}
+
+- (NSString *)outerwearAsString {
+    return _outerwearAsString;
 }
 
 @end

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Userinput.h"
 #import "Character.h"
+#import "Clothing.h"
 #import "outerwear enum.h"
 
 int getUserName(char userName[], char *prompt);
@@ -20,11 +21,6 @@ int main(int argc, const char * argv[]) {
     while (numberOfItemsScanned != 1) {
         numberOfItemsScanned = getUserName(userName, "What is your character name?\n");
     }
-    @autoreleasepool {
-        NSLog(@"\nHello %s\n\n", userName);
-    }
-    
-    NSLog(@"\nWhat would you like your character to wear?\n");
     
     Outerwear outerwearChosen = OuterwearNull;
     int numberOfClothingItemsScanned = 0;
@@ -32,7 +28,7 @@ int main(int argc, const char * argv[]) {
     while ((numberOfClothingItemsScanned != 1) ||
            (outerwearChosen < OuterwearFirst) || (outerwearChosen > OuterwearLast)) {
         fpurge(stdin);
-        printf("\nPlease enter:\n");
+        printf("\nWhat clothing would you like your character to wear? Please enter:\n");
         printf("    %d for Cloak\n", OuterwearCloak);
         printf("    %d for Hooded Robe\n", OuterwearHooded_Robe);
         printf("    %d for Body Armor\n", OuterwearBody_Armor);
@@ -44,11 +40,15 @@ int main(int argc, const char * argv[]) {
     }
     
     char *outerwearAsString = OuterwearGetStringName(outerwearChosen);
-    NSLog(@"\nYour character, %s, has the outwear, %s.\n\n", userName, outerwearAsString);
     
-    
-    return 0;
-    
+    @autoreleasepool {
+        Character *identity = [[Character alloc] initWithName:@(userName)
+                                                     clothing:@(outerwearAsString)];
+        
+        NSLog(@"\n\nHello %@. You are wearing your %@.\n\n", [identity name], [identity outerwearAsString]);
+        
+        return 0;
+    }
 }
 int getUserName(char userName[], char *prompt) {
     

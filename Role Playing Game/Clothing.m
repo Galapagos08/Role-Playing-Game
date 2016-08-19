@@ -6,9 +6,9 @@
 //  Copyright © 2016 Dan Esrey. All rights reserved.
 //
 
-#import "Outerwear.h"
+#import "Clothing.h"
 
-@implementation Outerwear
+@implementation Clothing
 
 - (instancetype)init {
     return [self initWithColor:@"NotChosen"];

@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "outerwear enum.h"
 
-@interface Outerwear : NSObject {
+
+@interface Clothing : NSObject {
     
 }
 
