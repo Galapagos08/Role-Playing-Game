@@ -33,7 +33,7 @@ typedef enum Color {
     ColorYellow,
     ColorGreen,
     ColorBlue,
-    ColorIndigo,
+    ColorBrown,
     ColorViolet,
     ColorBlack,
     ColorWhite,

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "outerwear enum.h"
+#import "Character.h"
 
 
 NSNumber *getNumberFromUser(int maxValidChoice);
@@ -17,5 +18,7 @@ int getUserName(char userName[], char *prompt);
 NSString *getStringFromUser();
 
 NSString *getNameFromUser();
+
+void letter();
 
 

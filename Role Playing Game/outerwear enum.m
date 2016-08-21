@@ -50,8 +50,8 @@ NSString *ColorGetStringName(Color input) {
         case ColorBlue: {
             return @"blue";
         }
-        case ColorIndigo: {
-            return @"indigo";
+        case ColorBrown: {
+            return @"brown";
         }
         case ColorViolet: {
             return @"violet";
