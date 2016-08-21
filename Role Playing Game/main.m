@@ -80,7 +80,7 @@ int main(int argc, const char * argv[]) {
             NSLog(@"\n\nYou approach the large wooden door to the inn and open it wide.\n\n");
         }
         NSLog(@"\n\nAs you enter the Inn of the Shuffling Donkey, you see a large fireplace in the center of the room with several tables on either side. Men, women, and other folk are gathered round the various tables telling tales, singing songs, or sharing hushed conversation. Everyone is drinking. In the left-hand corner in the rear of the room is a bar where a man you assume is the tavernkeeper is wiping a metal stein with a rag. There's also a small, empty table against the far wall behind the fireplace.\n\n");
-        NSLog(@"\n\nWould you like to go to the br or have a seat at the empty table?\n\n(1 = go to the bar/ 2 = sit at the empty table)\n\n");
+        NSLog(@"\n\nWould you like to go to the bar or have a seat at the empty table?\n\n(1 = go to the bar/ 2 = sit at the empty table)\n\n");
         NSNumber *barOrTable = getNumberFromUser(2);
         if ([barOrTable intValue] == 1) {
             NSLog(@"\n\nYou make your way back to the bar and are about to speak to the man you believe to be the tavernkeeper when he asks you, 'Something I can do for you?'\n\n");
@@ -99,7 +99,7 @@ int main(int argc, const char * argv[]) {
         }
         NSLog(@"\n\nSaddened by this news, you need a moment to gather your thoughts and decide what to do next. Sensing your hesitation, Elwood asks if you would like a drink. Thinking a drink would do you good, you tell him you would like a drink. Elwood asks you, 'what would you like?'\n\n");
         NSLog(@"Please enter a one-word drink name:\n\n");
-        NSLog(@"You know, I could really go for a %@.\n\n", getStringFromUser());
+        NSLog(@"\n\nYou know, I could really go for a %@.\n\n", getStringFromUser());
         NSLog(@"\n\n- - - TO BE CONTINUED - - -");
      }
     return 0;

@@ -10,7 +10,7 @@
 		F7BEBB881D677B5A0002897C /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BEBB801D677B5A0002897C /* Character.m */; };
 		F7BEBB891D677B5A0002897C /* Clothing.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BEBB821D677B5A0002897C /* Clothing.m */; };
 		F7BEBB8A1D677B5A0002897C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BEBB831D677B5A0002897C /* main.m */; };
-		F7BEBB8B1D677B5A0002897C /* outerwear enum.c in Sources */ = {isa = PBXBuildFile; fileRef = F7BEBB841D677B5A0002897C /* outerwear enum.c */; };
+		F7BEBB8B1D677B5A0002897C /* outerwear enum.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BEBB841D677B5A0002897C /* outerwear enum.m */; };
 		F7BEBB8C1D677B5A0002897C /* Userinput.m in Sources */ = {isa = PBXBuildFile; fileRef = F7BEBB871D677B5A0002897C /* Userinput.m */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +33,7 @@
 		F7BEBB811D677B5A0002897C /* Clothing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clothing.h; sourceTree = "<group>"; };
 		F7BEBB821D677B5A0002897C /* Clothing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clothing.m; sourceTree = "<group>"; };
 		F7BEBB831D677B5A0002897C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F7BEBB841D677B5A0002897C /* outerwear enum.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "outerwear enum.c"; sourceTree = "<group>"; };
+		F7BEBB841D677B5A0002897C /* outerwear enum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "outerwear enum.m"; sourceTree = "<group>"; };
 		F7BEBB851D677B5A0002897C /* outerwear enum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "outerwear enum.h"; sourceTree = "<group>"; };
 		F7BEBB861D677B5A0002897C /* Userinput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Userinput.h; sourceTree = "<group>"; };
 		F7BEBB871D677B5A0002897C /* Userinput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Userinput.m; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 				F7BEBB811D677B5A0002897C /* Clothing.h */,
 				F7BEBB821D677B5A0002897C /* Clothing.m */,
 				F7BEBB831D677B5A0002897C /* main.m */,
-				F7BEBB841D677B5A0002897C /* outerwear enum.c */,
+				F7BEBB841D677B5A0002897C /* outerwear enum.m */,
 				F7BEBB851D677B5A0002897C /* outerwear enum.h */,
 				F7BEBB861D677B5A0002897C /* Userinput.h */,
 				F7BEBB871D677B5A0002897C /* Userinput.m */,
@@ -140,7 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7BEBB8B1D677B5A0002897C /* outerwear enum.c in Sources */,
+				F7BEBB8B1D677B5A0002897C /* outerwear enum.m in Sources */,
 				F7BEBB881D677B5A0002897C /* Character.m in Sources */,
 				F7BEBB8A1D677B5A0002897C /* main.m in Sources */,
 				F7BEBB8C1D677B5A0002897C /* Userinput.m in Sources */,
